@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A small static site for PBL 2 showcasing content and a contact form.">
+  <title>Home – PBL 2 Static Shelf</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 class="site-title">PBL 2 Static Shelf</h1>
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="content.html">Content</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero">
+      <h2>Welcome</h2>
+      <p>This small static site demonstrates a clean, accessible layout for showcasing projects and content for PBL 2. Use the navigation above to explore featured content and contact options.</p>
+    </section>
+
+    <section class="featured">
+      <h2>Featured</h2>
+      <p>Explore a curated piece of content or a recent project highlight. This area can point visitors to important resources or calls to action.</p>
+      <p><a class="cta" href="content.html">Learn more →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p id="copyright">© <span id="year">2025</span> PBL 2 Team. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer for convenience
+    (function(){
+      const y = new Date().getFullYear();
+      const el = document.getElementById('year');
+      if(el) el.textContent = y;
+    })();
+  </script>
+</body>
+</html>
